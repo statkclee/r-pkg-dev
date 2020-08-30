@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 Testing | R package workshop</title>
+  <title>6 Testing | R 팩키지 워크샵</title>
   <meta name="description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 Testing | R package workshop" />
+  <meta property="og:title" content="6 Testing | R 팩키지 워크샵" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 Testing | R package workshop" />
+  <meta name="twitter:title" content="6 Testing | R 팩키지 워크샵" />
   
   <meta name="twitter:description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
   
 
 
@@ -50,6 +50,9 @@ through the steps to create a minimal R package." />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -76,7 +79,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -161,7 +164,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="setting-up.html"><a href="setting-up.html#filling-in-the-description"><i class="fa fa-check"></i><b>2.4</b> Filling in the DESCRIPTION</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="setting-up.html"><a href="setting-up.html#title-and-description"><i class="fa fa-check"></i><b>2.4.1</b> Title and description</a></li>
 <li class="chapter" data-level="2.4.2" data-path="setting-up.html"><a href="setting-up.html#authors"><i class="fa fa-check"></i><b>2.4.2</b> Authors</a></li>
-<li class="chapter" data-level="2.4.3" data-path="setting-up.html"><a href="setting-up.html#license-1"><i class="fa fa-check"></i><b>2.4.3</b> License</a></li>
+<li class="chapter" data-level="2.4.3" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i><b>2.4.3</b> License</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>3</b> Functions</a><ul>
@@ -211,9 +214,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a><ul>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#official-guides"><i class="fa fa-check"></i>Official guides</a><ul>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#cran-1"><i class="fa fa-check"></i>CRAN</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#bioconductor-1"><i class="fa fa-check"></i>Bioconductor</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#ropensci-1"><i class="fa fa-check"></i>rOpenSci</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#cran"><i class="fa fa-check"></i>CRAN</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#bioconductor"><i class="fa fa-check"></i>Bioconductor</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#ropensci"><i class="fa fa-check"></i>rOpenSci</a></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#rstudio"><i class="fa fa-check"></i>RStudio</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#books"><i class="fa fa-check"></i>Books</a></li>
@@ -234,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R package workshop</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R 팩키지 워크샵</a>
           </h1>
         </div>
 
@@ -246,7 +249,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">6</span> Testing</h1>
 <p>Now that we have some documentation <code>devtools::check()</code> should run without any
 problems.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">check</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">devtools<span class="op">::</span><span class="kw">check</span>()</a></code></pre></div>
 <pre><code>-- R CMD check results ------------------------------------------- mypkg 0.0.0.9000 ----
 Duration: 15.2s
 
@@ -267,31 +270,31 @@ again. When combined with some tests for obvious problems this is a good
 compromise better testing for every possible outcome and not testing at all.
 For example let’s see what happens when we ask <code>make_shades()</code> for a negative
 number of shades.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1"><span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">-1</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">-1</span>)</a></code></pre></div>
 <pre><code>Error in seq(colour_rgb[1], end, length.out = n + 1)[1:n] : 
   only 0&#39;s may be mixed with negative subscripts</code></pre>
 <p>This doesn’t make sense so we expect to get an error but it would be useful if
 the error message was more informative. What if we ask for zero shades?</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1"><span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">0</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">0</span>)</a></code></pre></div>
 <pre><code>[1] &quot;#DAA520&quot;</code></pre>
 <p>That does work, but it probably shouldn’t. Before we make any changes to the
 function let’s design some tests to make sure we get what we expect. There are
 a few ways to write unit tests for R packages but we are going to use the
 <strong>testthat</strong> package. We can set everything up with <strong>usethis</strong>.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" data-line-number="1">usethis<span class="op">::</span><span class="kw">use_testthat</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1">usethis<span class="op">::</span><span class="kw">use_testthat</span>()</a></code></pre></div>
 <pre><code>✔ Adding &#39;testthat&#39; to Suggests field in DESCRIPTION
 ✔ Creating &#39;tests/testthat/&#39;
 ✔ Writing &#39;tests/testthat.R&#39;
 ● Call `use_test()` to initialize a basic test file and open it for editing.</code></pre>
 <p>Now we have a <code>tests/</code> directory to hold all our tests. There is also a
 <code>tests/testthat.R</code> file which looks like this:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" data-line-number="1"><span class="kw">library</span>(testthat)</a>
-<a class="sourceLine" id="cb36-2" data-line-number="2"><span class="kw">library</span>(mypkg)</a>
-<a class="sourceLine" id="cb36-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb36-4" data-line-number="4"><span class="kw">test_check</span>(<span class="st">&quot;mypkg&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">library</span>(testthat)</a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="kw">library</span>(mypkg)</a>
+<a class="sourceLine" id="cb36-3" title="3"></a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="kw">test_check</span>(<span class="st">&quot;mypkg&quot;</span>)</a></code></pre></div>
 <p>All this does is make sure that our tests are run when we do
 <code>devtools::check()</code>. To open a new test file we can use <code>usethis::use_test()</code>.</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" data-line-number="1">usethis<span class="op">::</span><span class="kw">use_test</span>(<span class="st">&quot;colours&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1">usethis<span class="op">::</span><span class="kw">use_test</span>(<span class="st">&quot;colours&quot;</span>)</a></code></pre></div>
 <pre><code>✔ Increasing &#39;testthat&#39; version to &#39;&gt;= 2.1.0&#39; in DESCRIPTION
 ✔ Writing &#39;tests/testthat/test-colours.R&#39;
 ● Modify &#39;tests/testthat/test-colours.R&#39;</code></pre>
@@ -299,9 +302,9 @@ a few ways to write unit tests for R packages but we are going to use the
 like but it often makes sense to have them match up with the R files so things
 are easy to find. Our test file comes with a small example that shows how to
 use <strong>testthat</strong>.</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1"><span class="kw">test_that</span>(<span class="st">&quot;multiplication works&quot;</span>, {</a>
-<a class="sourceLine" id="cb39-2" data-line-number="2">  <span class="kw">expect_equal</span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span>, <span class="dv">4</span>)</a>
-<a class="sourceLine" id="cb39-3" data-line-number="3">})</a></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">test_that</span>(<span class="st">&quot;multiplication works&quot;</span>, {</a>
+<a class="sourceLine" id="cb39-2" title="2">  <span class="kw">expect_equal</span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="dv">2</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb39-3" title="3">})</a></code></pre></div>
 <p>Each set of tests starts with the <code>test_that()</code> function. This function has two
 arguments, a description and the code with the tests that we want to run. It
 looks a bit strange to start with but it makes sense if you read it as a
@@ -311,14 +314,14 @@ has two parts, the thing we want to test and what we expect it to be. There are
 different functions for different types of expectations. Reading this part as
 a sentence says something like “Expect that 2 * 2 is equal to 4”. For our test
 we want to use the <code>expect_error()</code> function, because that is what we expect.</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" data-line-number="1"><span class="kw">test_that</span>(<span class="st">&quot;n is at least 1&quot;</span>, {</a>
-<a class="sourceLine" id="cb40-2" data-line-number="2">    <span class="kw">expect_error</span>(<span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">-1</span>),</a>
-<a class="sourceLine" id="cb40-3" data-line-number="3">                 <span class="st">&quot;n must be at least 1&quot;</span>)</a>
-<a class="sourceLine" id="cb40-4" data-line-number="4">    <span class="kw">expect_error</span>(<span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">0</span>),</a>
-<a class="sourceLine" id="cb40-5" data-line-number="5">                 <span class="st">&quot;n must be at least 1&quot;</span>)</a>
-<a class="sourceLine" id="cb40-6" data-line-number="6">})</a></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">test_that</span>(<span class="st">&quot;n is at least 1&quot;</span>, {</a>
+<a class="sourceLine" id="cb40-2" title="2">    <span class="kw">expect_error</span>(<span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">-1</span>),</a>
+<a class="sourceLine" id="cb40-3" title="3">                 <span class="st">&quot;n must be at least 1&quot;</span>)</a>
+<a class="sourceLine" id="cb40-4" title="4">    <span class="kw">expect_error</span>(<span class="kw">make_shades</span>(<span class="st">&quot;goldenrod&quot;</span>, <span class="dv">0</span>),</a>
+<a class="sourceLine" id="cb40-5" title="5">                 <span class="st">&quot;n must be at least 1&quot;</span>)</a>
+<a class="sourceLine" id="cb40-6" title="6">})</a></code></pre></div>
 <p>To run our tests we use <code>devtools::test()</code>.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">test</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1">devtools<span class="op">::</span><span class="kw">test</span>()</a></code></pre></div>
 <pre><code>Loading mypkg
 Testing mypkg
 √ |  OK F W S | Context
@@ -347,51 +350,51 @@ know they check the right things we can modify our function to check the value
 of <code>n</code> and give the correct error.</p>
 <p>Let’s add some code to check the value of <code>n</code>. We will update the documentation
 as well so the user knows what values can be used.</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" data-line-number="1"><span class="co">#&#39; Make shades</span></a>
-<a class="sourceLine" id="cb43-2" data-line-number="2"><span class="co">#&#39;</span></a>
-<a class="sourceLine" id="cb43-3" data-line-number="3"><span class="co">#&#39; Given a colour make \code{n} lighter or darker shades</span></a>
-<a class="sourceLine" id="cb43-4" data-line-number="4"><span class="co">#&#39;</span></a>
-<a class="sourceLine" id="cb43-5" data-line-number="5"><span class="co">#&#39; @param colour The colour to make shades of</span></a>
-<a class="sourceLine" id="cb43-6" data-line-number="6"><span class="co">#&#39; @param n The number of shades to make, at least 1</span></a>
-<a class="sourceLine" id="cb43-7" data-line-number="7"><span class="co">#&#39; @param lighter Whether to make lighter (\code{TRUE}) or darker (\code{FALSE})</span></a>
-<a class="sourceLine" id="cb43-8" data-line-number="8"><span class="co">#&#39; shades</span></a>
-<a class="sourceLine" id="cb43-9" data-line-number="9"><span class="co">#&#39;</span></a>
-<a class="sourceLine" id="cb43-10" data-line-number="10"><span class="co">#&#39; @return A vector of \code{n} colour hex codes</span></a>
-<a class="sourceLine" id="cb43-11" data-line-number="11"><span class="co">#&#39; @export</span></a>
-<a class="sourceLine" id="cb43-12" data-line-number="12"><span class="co">#&#39;</span></a>
-<a class="sourceLine" id="cb43-13" data-line-number="13"><span class="co">#&#39; @examples</span></a>
-<a class="sourceLine" id="cb43-14" data-line-number="14"><span class="co">#&#39; # Five lighter shades</span></a>
-<a class="sourceLine" id="cb43-15" data-line-number="15"><span class="co">#&#39; make_shades(&quot;goldenrod&quot;, 5)</span></a>
-<a class="sourceLine" id="cb43-16" data-line-number="16"><span class="co">#&#39; # Five darker shades</span></a>
-<a class="sourceLine" id="cb43-17" data-line-number="17"><span class="co">#&#39; make_shades(&quot;goldenrod&quot;, 5, lighter = FALSE)</span></a>
-<a class="sourceLine" id="cb43-18" data-line-number="18">make_shades &lt;-<span class="st"> </span><span class="cf">function</span>(colour, n, <span class="dt">lighter =</span> <span class="ot">TRUE</span>) {</a>
-<a class="sourceLine" id="cb43-19" data-line-number="19">    </a>
-<a class="sourceLine" id="cb43-20" data-line-number="20">    <span class="co"># Check the value of n</span></a>
-<a class="sourceLine" id="cb43-21" data-line-number="21">    <span class="cf">if</span> (n <span class="op">&lt;</span><span class="st"> </span><span class="dv">1</span>) {</a>
-<a class="sourceLine" id="cb43-22" data-line-number="22">        <span class="kw">stop</span>(<span class="st">&quot;n must be at least 1&quot;</span>)</a>
-<a class="sourceLine" id="cb43-23" data-line-number="23">    }</a>
-<a class="sourceLine" id="cb43-24" data-line-number="24">    </a>
-<a class="sourceLine" id="cb43-25" data-line-number="25">    <span class="co"># Convert the colour to RGB</span></a>
-<a class="sourceLine" id="cb43-26" data-line-number="26">    colour_rgb &lt;-<span class="st"> </span>grDevices<span class="op">::</span><span class="kw">col2rgb</span>(colour)[, <span class="dv">1</span>]</a>
-<a class="sourceLine" id="cb43-27" data-line-number="27"></a>
-<a class="sourceLine" id="cb43-28" data-line-number="28">    <span class="co"># Decide if we are heading towards white or black</span></a>
-<a class="sourceLine" id="cb43-29" data-line-number="29">    <span class="cf">if</span> (lighter) {</a>
-<a class="sourceLine" id="cb43-30" data-line-number="30">        end &lt;-<span class="st"> </span><span class="dv">255</span></a>
-<a class="sourceLine" id="cb43-31" data-line-number="31">    } <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb43-32" data-line-number="32">        end &lt;-<span class="st"> </span><span class="dv">0</span></a>
-<a class="sourceLine" id="cb43-33" data-line-number="33">    }</a>
-<a class="sourceLine" id="cb43-34" data-line-number="34"></a>
-<a class="sourceLine" id="cb43-35" data-line-number="35">    <span class="co"># Calculate the red, green and blue for the shades</span></a>
-<a class="sourceLine" id="cb43-36" data-line-number="36">    <span class="co"># we calculate one extra point to avoid pure white/black</span></a>
-<a class="sourceLine" id="cb43-37" data-line-number="37">    red &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">1</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
-<a class="sourceLine" id="cb43-38" data-line-number="38">    green &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">2</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
-<a class="sourceLine" id="cb43-39" data-line-number="39">    blue &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">3</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
-<a class="sourceLine" id="cb43-40" data-line-number="40"></a>
-<a class="sourceLine" id="cb43-41" data-line-number="41">    <span class="co"># Convert the RGB values to hex codes</span></a>
-<a class="sourceLine" id="cb43-42" data-line-number="42">    shades &lt;-<span class="st"> </span>grDevices<span class="op">::</span><span class="kw">rgb</span>(red, green, blue, <span class="dt">maxColorValue =</span> <span class="dv">255</span>)</a>
-<a class="sourceLine" id="cb43-43" data-line-number="43"></a>
-<a class="sourceLine" id="cb43-44" data-line-number="44">    <span class="kw">return</span>(shades)</a>
-<a class="sourceLine" id="cb43-45" data-line-number="45">}</a></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1"><span class="co">#&#39; Make shades</span></a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="co">#&#39;</span></a>
+<a class="sourceLine" id="cb43-3" title="3"><span class="co">#&#39; Given a colour make \code{n} lighter or darker shades</span></a>
+<a class="sourceLine" id="cb43-4" title="4"><span class="co">#&#39;</span></a>
+<a class="sourceLine" id="cb43-5" title="5"><span class="co">#&#39; @param colour The colour to make shades of</span></a>
+<a class="sourceLine" id="cb43-6" title="6"><span class="co">#&#39; @param n The number of shades to make, at least 1</span></a>
+<a class="sourceLine" id="cb43-7" title="7"><span class="co">#&#39; @param lighter Whether to make lighter (\code{TRUE}) or darker (\code{FALSE})</span></a>
+<a class="sourceLine" id="cb43-8" title="8"><span class="co">#&#39; shades</span></a>
+<a class="sourceLine" id="cb43-9" title="9"><span class="co">#&#39;</span></a>
+<a class="sourceLine" id="cb43-10" title="10"><span class="co">#&#39; @return A vector of \code{n} colour hex codes</span></a>
+<a class="sourceLine" id="cb43-11" title="11"><span class="co">#&#39; @export</span></a>
+<a class="sourceLine" id="cb43-12" title="12"><span class="co">#&#39;</span></a>
+<a class="sourceLine" id="cb43-13" title="13"><span class="co">#&#39; @examples</span></a>
+<a class="sourceLine" id="cb43-14" title="14"><span class="co">#&#39; # Five lighter shades</span></a>
+<a class="sourceLine" id="cb43-15" title="15"><span class="co">#&#39; make_shades(&quot;goldenrod&quot;, 5)</span></a>
+<a class="sourceLine" id="cb43-16" title="16"><span class="co">#&#39; # Five darker shades</span></a>
+<a class="sourceLine" id="cb43-17" title="17"><span class="co">#&#39; make_shades(&quot;goldenrod&quot;, 5, lighter = FALSE)</span></a>
+<a class="sourceLine" id="cb43-18" title="18">make_shades &lt;-<span class="st"> </span><span class="cf">function</span>(colour, n, <span class="dt">lighter =</span> <span class="ot">TRUE</span>) {</a>
+<a class="sourceLine" id="cb43-19" title="19">    </a>
+<a class="sourceLine" id="cb43-20" title="20">    <span class="co"># Check the value of n</span></a>
+<a class="sourceLine" id="cb43-21" title="21">    <span class="cf">if</span> (n <span class="op">&lt;</span><span class="st"> </span><span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb43-22" title="22">        <span class="kw">stop</span>(<span class="st">&quot;n must be at least 1&quot;</span>)</a>
+<a class="sourceLine" id="cb43-23" title="23">    }</a>
+<a class="sourceLine" id="cb43-24" title="24">    </a>
+<a class="sourceLine" id="cb43-25" title="25">    <span class="co"># Convert the colour to RGB</span></a>
+<a class="sourceLine" id="cb43-26" title="26">    colour_rgb &lt;-<span class="st"> </span>grDevices<span class="op">::</span><span class="kw">col2rgb</span>(colour)[, <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb43-27" title="27"></a>
+<a class="sourceLine" id="cb43-28" title="28">    <span class="co"># Decide if we are heading towards white or black</span></a>
+<a class="sourceLine" id="cb43-29" title="29">    <span class="cf">if</span> (lighter) {</a>
+<a class="sourceLine" id="cb43-30" title="30">        end &lt;-<span class="st"> </span><span class="dv">255</span></a>
+<a class="sourceLine" id="cb43-31" title="31">    } <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb43-32" title="32">        end &lt;-<span class="st"> </span><span class="dv">0</span></a>
+<a class="sourceLine" id="cb43-33" title="33">    }</a>
+<a class="sourceLine" id="cb43-34" title="34"></a>
+<a class="sourceLine" id="cb43-35" title="35">    <span class="co"># Calculate the red, green and blue for the shades</span></a>
+<a class="sourceLine" id="cb43-36" title="36">    <span class="co"># we calculate one extra point to avoid pure white/black</span></a>
+<a class="sourceLine" id="cb43-37" title="37">    red &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">1</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
+<a class="sourceLine" id="cb43-38" title="38">    green &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">2</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
+<a class="sourceLine" id="cb43-39" title="39">    blue &lt;-<span class="st"> </span><span class="kw">seq</span>(colour_rgb[<span class="dv">3</span>], end, <span class="dt">length.out =</span> n <span class="op">+</span><span class="st"> </span><span class="dv">1</span>)[<span class="dv">1</span><span class="op">:</span>n]</a>
+<a class="sourceLine" id="cb43-40" title="40"></a>
+<a class="sourceLine" id="cb43-41" title="41">    <span class="co"># Convert the RGB values to hex codes</span></a>
+<a class="sourceLine" id="cb43-42" title="42">    shades &lt;-<span class="st"> </span>grDevices<span class="op">::</span><span class="kw">rgb</span>(red, green, blue, <span class="dt">maxColorValue =</span> <span class="dv">255</span>)</a>
+<a class="sourceLine" id="cb43-43" title="43"></a>
+<a class="sourceLine" id="cb43-44" title="44">    <span class="kw">return</span>(shades)</a>
+<a class="sourceLine" id="cb43-45" title="45">}</a></code></pre></div>
 <blockquote>
 <p><strong>Writing parameter checks</strong></p>
 <p>These kinds of checks for parameter inputs are an important part of a function
@@ -408,7 +411,7 @@ to the user we would use <code>message()</code>. Using <code>message()</code> in
 <code>cat()</code> is important because it means the user can hide the messages using
 <code>suppressMessages()</code> (or <code>suppressWarnings()</code> for warnings). Now we can try our
 tests again and they should pass.</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">test</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" title="1">devtools<span class="op">::</span><span class="kw">test</span>()</a></code></pre></div>
 <pre><code>Loading mypkg
 Testing mypkg
 √ |  OK F W S | Context
@@ -437,11 +440,13 @@ showing which lines of your code are covered by tests.</p>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -449,12 +454,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -467,6 +471,10 @@ gitbook.start({
 },
 "history": {
 "link": "https://github.com/COMBINE-Australia/r-pkg-dev/commits/master/06-testing.Rmd",
+"text": null
+},
+"view": {
+"link": null,
 "text": null
 },
 "download": ["r-pkg-dev.pdf", "r-pkg-dev.epub"],

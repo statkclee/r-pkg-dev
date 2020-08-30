@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>R package workshop</title>
+  <title>R 팩키지 워크샵</title>
   <meta name="description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="R package workshop" />
+  <meta property="og:title" content="R 팩키지 워크샵" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="R package workshop" />
+  <meta name="twitter:title" content="R 팩키지 워크샵" />
   
   <meta name="twitter:description" content="<p>These are the materials for the R package development workshop created by
 COMBINE, an association for Australian students in bioinformatics,
 computational biology and related fields.</p>
-This workshop explains the basics of R package development and takes you
-through the steps to create a minimal R package." />
+<p>This workshop explains the basics of R package development and takes you
+through the steps to create a minimal R package.</p>" />
   
 
 
@@ -50,6 +50,9 @@ through the steps to create a minimal R package." />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -76,7 +79,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -161,7 +164,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="setting-up.html"><a href="setting-up.html#filling-in-the-description"><i class="fa fa-check"></i><b>2.4</b> Filling in the DESCRIPTION</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="setting-up.html"><a href="setting-up.html#title-and-description"><i class="fa fa-check"></i><b>2.4.1</b> Title and description</a></li>
 <li class="chapter" data-level="2.4.2" data-path="setting-up.html"><a href="setting-up.html#authors"><i class="fa fa-check"></i><b>2.4.2</b> Authors</a></li>
-<li class="chapter" data-level="2.4.3" data-path="setting-up.html"><a href="setting-up.html#license-1"><i class="fa fa-check"></i><b>2.4.3</b> License</a></li>
+<li class="chapter" data-level="2.4.3" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i><b>2.4.3</b> License</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>3</b> Functions</a><ul>
@@ -211,9 +214,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a><ul>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#official-guides"><i class="fa fa-check"></i>Official guides</a><ul>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#cran-1"><i class="fa fa-check"></i>CRAN</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#bioconductor-1"><i class="fa fa-check"></i>Bioconductor</a></li>
-<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#ropensci-1"><i class="fa fa-check"></i>rOpenSci</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#cran"><i class="fa fa-check"></i>CRAN</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#bioconductor"><i class="fa fa-check"></i>Bioconductor</a></li>
+<li class="chapter" data-level="" data-path="building-installing-and-releasing.html"><a href="building-installing-and-releasing.html#ropensci"><i class="fa fa-check"></i>rOpenSci</a></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#rstudio"><i class="fa fa-check"></i>RStudio</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="resources.html"><a href="resources.html#books"><i class="fa fa-check"></i>Books</a></li>
@@ -234,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R package workshop</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R 팩키지 워크샵</a>
           </h1>
         </div>
 
@@ -243,7 +246,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">R package workshop</h1>
+<h1 class="title">R 팩키지 워크샵</h1>
+<h2 class="subtitle"><em>호주 R 팩키지 워크샵 (2019)</em></h2>
 </div>
 <div id="preface" class="section level1 unnumbered">
 <h1>Preface</h1>
@@ -267,8 +271,8 @@ introductory R workshop first.</p>
 <div id="r-and-rstudio" class="section level3 unnumbered">
 <h3>R and RStudio</h3>
 <p>You will need a recent version of R and RStudio. These materials were written
-using R version 3.6.0 (2019-04-26) and RStudio version
-1.2.1335. You can download R from
+using R version 4.0.1 (2020-06-06) and RStudio version
+1.2.5033. You can download R from
 <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a> and RStudio from
 <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a>.</p>
 </div>
@@ -277,26 +281,26 @@ using R version 3.6.0 (2019-04-26) and RStudio version
 <p>The main packages used in the workshop are below with the versions used in these
 materials:</p>
 <ul>
-<li><strong>devtools</strong> (v2.1.0)</li>
-<li><strong>usethis</strong> (v1.5.1)</li>
-<li><strong>roxygen2</strong> (v6.1.1)</li>
-<li><strong>testthat</strong> (v2.2.1)</li>
-<li><strong>knitr</strong> (v1.24)</li>
-<li><strong>ggplot2</strong> (v3.2.1)</li>
-<li><strong>rlang</strong> (v0.4.0)</li>
+<li><strong>devtools</strong> (v2.3.1)</li>
+<li><strong>usethis</strong> (v1.6.1)</li>
+<li><strong>roxygen2</strong> (v7.1.1)</li>
+<li><strong>testthat</strong> (v2.3.2)</li>
+<li><strong>knitr</strong> (v1.28)</li>
+<li><strong>ggplot2</strong> (v3.3.2)</li>
+<li><strong>rlang</strong> (v0.4.7)</li>
 </ul>
 <p>Please make sure these packages are installed before starting the workshop. You
 can install them by running the following code.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">pkgs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;devtools&quot;</span>, <span class="st">&quot;usethis&quot;</span>, <span class="st">&quot;roxygen2&quot;</span>, <span class="st">&quot;testthat&quot;</span>, <span class="st">&quot;knitr&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>,</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">          <span class="st">&quot;rlang&quot;</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">install.packages</span>(pkgs)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">pkgs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;devtools&quot;</span>, <span class="st">&quot;usethis&quot;</span>, <span class="st">&quot;roxygen2&quot;</span>, <span class="st">&quot;testthat&quot;</span>, <span class="st">&quot;knitr&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>,</a>
+<a class="sourceLine" id="cb1-2" title="2">          <span class="st">&quot;rlang&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">install.packages</span>(pkgs)</a></code></pre></div>
 </div>
 <div id="build-tools" class="section level3 unnumbered">
 <h3>Build tools</h3>
 <p>Some stages of the package development process can require other programs to be
 installed on your computer. To check that you have everything you need run the
 following function in R (after installing the packages above).</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">pkgbuild<span class="op">::</span><span class="kw">check_build_tools</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">pkgbuild<span class="op">::</span><span class="kw">check_build_tools</span>()</a></code></pre></div>
 <p>This function will check if you have the build tools installed and prompt you
 to install them if you don’t.</p>
 </div>
@@ -330,11 +334,13 @@ International (CC BY 4.0) license
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -342,12 +348,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -360,6 +365,10 @@ gitbook.start({
 },
 "history": {
 "link": "https://github.com/COMBINE-Australia/r-pkg-dev/commits/master/index.Rmd",
+"text": null
+},
+"view": {
+"link": null,
 "text": null
 },
 "download": ["r-pkg-dev.pdf", "r-pkg-dev.epub"],

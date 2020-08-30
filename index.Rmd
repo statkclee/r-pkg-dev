@@ -1,6 +1,8 @@
 --- 
-title: "R package workshop"
+title: "R 팩키지 워크샵"
+subtitle: "호주 R 팩키지 워크샵 (2019)"
 site: bookdown::bookdown_site
+output: bookdown::gitbook
 documentclass: book
 biblio-style: apalike
 link-citations: yes
